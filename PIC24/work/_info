@@ -1,0 +1,172 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\PIC24
+Epc_update
+Z1 w1634293377
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z3 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8PC_Update.vhd
+Z6 FPC_Update.vhd
+l0
+L30
+VCEZ3I8TOB6aN<Bl5RU`0Q1
+Z7 OX;C;6.4b;39
+31
+Z8 o-explicit -93 -O0
+Z9 tExplicit 1
+!s100 Cno7T:VOgmHC8>dO=H5>[2
+Abehavioral
+R2
+R3
+R4
+DEx4 work 9 pc_update 0 22 CEZ3I8TOB6aN<Bl5RU`0Q1
+l38
+L36
+VAczUgF_TWohanc526iKB[2
+R7
+31
+Z10 Mx3 4 ieee 14 std_logic_1164
+Z11 Mx2 4 ieee 15 std_logic_arith
+Z12 Mx1 4 ieee 18 std_logic_unsigned
+R8
+R9
+!s100 WlbDgJnRM;RNAdh>m>?Dl3
+Epic24
+Z13 w1634293637
+Z14 DPx6 unisim 11 vcomponents 0 22 6Bno5d?=9BlFAj[lAHJHA1
+Z15 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R4
+Z16 8PIC24.vhf
+Z17 FPIC24.vhf
+l0
+L28
+VJSTgUGlc5eeQT;`Kz[;ZM3
+R7
+31
+R8
+R9
+!s100 ?P5ODTjCfnU4ORJdf;K6l0
+Abehavioral
+R14
+R15
+R4
+DEx4 work 5 pic24 0 22 JSTgUGlc5eeQT;`Kz[;ZM3
+l51
+L32
+VB7iLCO2_kjO`Q^JH;EPSo0
+R7
+31
+R10
+Mx2 4 ieee 11 numeric_std
+Z18 Mx1 6 unisim 11 vcomponents
+R8
+R9
+!s100 QAVh:h2nRlk4eWj^X87iZ0
+Eprogcnt
+Z19 w1634293378
+R2
+R3
+R4
+Z20 8ProgCnt.vhd
+Z21 FProgCnt.vhd
+l0
+L30
+V<mc`YAhTNT9?5Ub6?^PJG0
+R7
+31
+R8
+R9
+!s100 GCAGGkc6^nda;`N80EmH;1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 progcnt 0 22 <mc`YAhTNT9?5Ub6?^PJG0
+l39
+L37
+VALFhGMQhI?8adYkYomI3F2
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 UBjR;S=ecY7eWXdTYeHNX2
+Erom32x24
+Z22 w1634293038
+R2
+R3
+R4
+Z23 8ROM32x24.vhd
+Z24 FROM32x24.vhd
+l0
+L30
+VBd:F0YEec4TL^UzXGW_QD3
+R7
+31
+R8
+R9
+!s100 dbAlABlZ<0=d?;4Rb51PG2
+Abehavioral
+R2
+R3
+R4
+DEx4 work 8 rom32x24 0 22 Bd:F0YEec4TL^UzXGW_QD3
+l65
+L35
+VjGmOZC2E<W`TAdGAJW3_c2
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 mNPj7onDa[`h9A0[k1Bk[0
+Etbw
+Z25 w1634293769
+R2
+R3
+Z26 DPx3 std 6 textio 0 22 m2KQDRRhmF833<<DjYdL70
+Z27 DPx4 ieee 16 std_logic_textio 0 22 8YS?iX`WD1REQG`ZRYQGB2
+R15
+R4
+R14
+Z28 8tbw.vhw
+Z29 Ftbw.vhw
+l0
+L30
+Vl^ll`_[GN`63[@IIK5RBC2
+!s100 ogllkILG<^b_ZLWjFe_M=2
+R7
+31
+R8
+R9
+Atestbench_arch
+R2
+R3
+R26
+R27
+R15
+R4
+R14
+DEx4 work 3 tbw 0 22 l^ll`_[GN`63[@IIK5RBC2
+l48
+L33
+VFOoEZ:lj:=d5f]a2nz5ie3
+!s100 4WaSEJ61n^=I:CP>jP[Tg0
+R7
+31
+Mx7 6 unisim 11 vcomponents
+Z30 Mx6 4 ieee 14 std_logic_1164
+Mx5 4 ieee 11 numeric_std
+Z31 Mx4 4 ieee 16 std_logic_textio
+Z32 Mx3 3 std 6 textio
+R11
+R12
+R8
+R9

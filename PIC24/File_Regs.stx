@@ -1,0 +1,23 @@
+Release 9.2.04i - xst J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.31 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "//vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd" is newer than current system time.
+Entity <file_regs> compiled.
+Entity <file_regs> (Architecture <behavioral>) compiled.
+CPU : 0.20 / 0.53 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 178288 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

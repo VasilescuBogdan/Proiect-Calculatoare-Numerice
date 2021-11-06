@@ -1,0 +1,102 @@
+VERSION 6
+BEGIN SCHEMATIC
+    BEGIN ATTR DeviceFamilyName "spartan3"
+        DELETE all:0
+        EDITNAME all:0
+        EDITTRAIT all:0
+    END ATTR
+    BEGIN NETLIST
+        SIGNAL Clk
+        SIGNAL New_PC(5:0)
+        SIGNAL PC(5:0)
+        SIGNAL PC(5:1)
+        PORT Input Clk
+        BEGIN BLOCKDEF PC_Update
+            TIMESTAMP 2021 10 14 14 31 51
+            LINE N 0 -224 64 -224 
+            RECTANGLE N 0 -232 64 -216 
+            RECTANGLE N 320 -88 384 -72 
+            LINE N 384 -80 320 -80 
+            RECTANGLE N 64 -256 320 -20 
+        END BLOCKDEF
+        BEGIN BLOCKDEF ProgCnt
+            TIMESTAMP 2021 10 14 14 32 7
+            RECTANGLE N 64 -128 320 0 
+            LINE N 64 -96 0 -96 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -108 384 -84 
+            LINE N 320 -96 384 -96 
+        END BLOCKDEF
+        BEGIN BLOCKDEF ROM32x24
+            TIMESTAMP 2021 10 15 10 17 47
+            RECTANGLE N 64 -64 320 0 
+            RECTANGLE N 0 -44 64 -20 
+            LINE N 64 -32 0 -32 
+            RECTANGLE N 320 -44 384 -20 
+            LINE N 320 -32 384 -32 
+        END BLOCKDEF
+        BEGIN BLOCK U_New_PC PC_Update
+            PIN PC(5:0) PC(5:0)
+            PIN New_PC(5:0) New_PC(5:0)
+        END BLOCK
+        BEGIN BLOCK U_PC ProgCnt
+            PIN Clk Clk
+            PIN New_PC(5:0) New_PC(5:0)
+            PIN PC(5:0) PC(5:0)
+        END BLOCK
+        BEGIN BLOCK U_ROM ROM32x24
+            PIN Addr(4:0) PC(5:1)
+            PIN Data(23:0)
+        END BLOCK
+    END NETLIST
+    BEGIN SHEET 1 3520 2720
+        BEGIN INSTANCE U_New_PC 624 448 R0
+            BEGIN DISPLAY 48 -344 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        BEGIN INSTANCE U_PC 624 752 R0
+            BEGIN DISPLAY 64 24 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        BEGIN BRANCH Clk
+            WIRE 592 656 624 656
+        END BRANCH
+        IOMARKER 592 656 Clk R180 28
+        BEGIN BRANCH New_PC(5:0)
+            WIRE 336 224 624 224
+            WIRE 336 224 336 464
+            WIRE 336 464 336 720
+            WIRE 336 720 624 720
+            BEGIN DISPLAY 336 464 ATTR Name
+                ALIGNMENT SOFT-TVCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN BRANCH PC(5:0)
+            WIRE 1008 368 1120 368
+            WIRE 1120 368 1120 496
+            WIRE 1120 496 1120 656
+            WIRE 1120 656 1120 768
+            WIRE 1120 768 1120 880
+            WIRE 1008 656 1120 656
+            BEGIN DISPLAY 1120 496 ATTR Name
+                ALIGNMENT SOFT-TVCENTER
+            END DISPLAY
+        END BRANCH
+        BEGIN INSTANCE U_ROM 1424 800 R0
+            BEGIN DISPLAY 48 -152 ATTR InstName
+                FONT 28 "Arial"
+            END DISPLAY
+        END INSTANCE
+        BUSTAP 1120 768 1216 768
+        BEGIN BRANCH PC(5:1)
+            WIRE 1216 768 1312 768
+            WIRE 1312 768 1424 768
+            BEGIN DISPLAY 1312 768 ATTR Name
+                ALIGNMENT SOFT-BCENTER
+            END DISPLAY
+        END BRANCH
+    END SHEET
+END SCHEMATIC
