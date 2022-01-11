@@ -4,8 +4,8 @@ Clk
 =RdReg1[3:0]=
 =RdReg2[3:0]=
 =WrReg[3:0]=
-=WrData[23:0]=
+=WrData[15:0]=
 [Outputs]
-=RdData1[23:0]=
-=RdData2[23:0]=
+=RdData1[15:0]=
+=RdData2[15:0]=
 [BiDir]

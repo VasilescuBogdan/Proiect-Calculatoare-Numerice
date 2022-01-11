@@ -5,7 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLParsers" num="3530" delta="unknown" >Time stamp of file &quot;<arg fmt="%s" index="1">//vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd</arg>&quot; is newer than current system time.
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/File_Regs</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">Z:/PIC24/File_Regs.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/File_Regs/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">Z:/PIC24/File_Regs.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">//vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd</arg>&quot;.
 </msg>
 
 </messages>

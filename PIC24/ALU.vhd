@@ -28,31 +28,33 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --use UNISIM.VComponents.all;
 
 entity ALU is
-    Port ( RdData1 : in  STD_LOGIC_VECTOR (23 downto 0);
-           RdData2 : in  STD_LOGIC_VECTOR (23 downto 0);
-           FAddr : in  STD_LOGIC_VECTOR (15 downto 0);
-           ALUSrc : in  STD_LOGIC;
+    Port ( RdData1 : in  STD_LOGIC_VECTOR (15 downto 0);
+           RdData2 : in  STD_LOGIC_VECTOR (15 downto 0);
+			  Clk : in STD_LOGIC;
+			  CE_NF : in STD_LOGIC;
+			  CE_ZF : in STD_LOGIC;
+			  CE_OVF : in STD_LOGIC;
+			  CE_CF : in STD_LOGIC;
            ALUOP : in  STD_LOGIC_VECTOR (1 downto 0);
-           Y : out  STD_LOGIC_VECTOR (23 downto 0));
+			  NF : out STD_LOGIC;
+			  ZF : out STD_LOGIC;
+			  OVF : out STD_LOGIC;
+			  CF : out STD_LOGIC;
+           Y : out  STD_LOGIC_VECTOR (15 downto 0));
 end ALU;
 
 architecture Behavioral of ALU is
-	signal SEAddr : std_logic_vector(23 downto 0);
-	signal OP1 : std_logic_vector(23 downto 0);
-	signal OP2 : std_logic_vector(23 downto 0);
-	
+	signa cY : out STD_LOGIC_VECTOR (15 downto 0);
 begin
-
-	SEAddr(15 downto 0) <= FAddr;
-	SEAddr(31 downto 16) <= x"0000" when FAddr(15) = '0' else x"FFFF";
-	OP2 <= RdData2 when ALUSrc = '0' else SEAddr;
-	OP1 <= RdData1;
-	
 	with ALUOP select
-	Y <= OP1 + OP2 when "00",
-		  OP1 - OP2 when "01",
-		  OP1 and OP2 when "10",
-		  OP1 or OP2 when "11",
-		  x"0000_0000" when others;
+	cY <= RdData1 + RdData2 when "00",
+		  RdData1 - RdData2 when "01",
+		  RdData1 and RdData2 when "10",
+		  RdData1 or RdData2 when "11",
+		  x"000000" when others;
+	Y <= cY;
+	NF <= cY(15) when rising_edge(Clk) and CE_NF = '1';
+	ZF <= (cY = x"0000") when rising_edge(Clk) and CE_ZF = '1';
+	
 end Behavioral;
 

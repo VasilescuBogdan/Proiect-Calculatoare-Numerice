@@ -1,6 +1,7 @@
 EN pic24 NULL Z:/PIC24/PIC24.vhf sub00/vhpl06 1634293737
-AR file_regs behavioral Z:/PIC24/File_Regs.vhd sub00/vhpl11 1635428139
-EN file_regs NULL Z:/PIC24/File_Regs.vhd sub00/vhpl10 1635428138
+AR file_regs behavioral Z:/PIC24/File_Regs.vhd sub00/vhpl11 1639566577
+AR alu behavioral Z:/PIC24/ALU.vhd sub00/vhpl13 1636641732
+EN file_regs NULL Z:/PIC24/File_Regs.vhd sub00/vhpl10 1639566576
 EN mux2v4 NULL Z:/PIC24/MUX2V4.vhd sub00/vhpl08 1635425439
 EN rom32x24 NULL //vboxsvr/proiect_calculatoare_numerice/PIC24/ROM32x24.vhd sub00/vhpl04 1635427734
 AR pic24 behavioral Z:/PIC24/PIC24.vhf sub00/vhpl07 1634293738
@@ -10,3 +11,4 @@ EN progcnt NULL Z:/PIC24/ProgCnt.vhd sub00/vhpl00 1634221923
 AR rom32x24 behavioral //vboxsvr/proiect_calculatoare_numerice/PIC24/ROM32x24.vhd sub00/vhpl05 1635427735
 AR progcnt behavioral Z:/PIC24/ProgCnt.vhd sub00/vhpl01 1634221924
 AR pc_update behavioral Z:/PIC24/PC_Update.vhd sub00/vhpl03 1634221908
+EN alu NULL Z:/PIC24/ALU.vhd sub00/vhpl12 1636641731

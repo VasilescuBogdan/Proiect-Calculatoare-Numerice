@@ -1,0 +1,7 @@
+[Inputs]
+=RdData1[23:0]=
+=RdData2[23:0]=
+=ALUOP[1:0]=
+[Outputs]
+=Y[23:0]=
+[BiDir]

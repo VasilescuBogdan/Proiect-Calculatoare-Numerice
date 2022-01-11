@@ -29,17 +29,17 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity File_Regs is
     Port ( RdReg1 : in  STD_LOGIC_VECTOR (3 downto 0);
-           RdData1 : out  STD_LOGIC_VECTOR (23 downto 0);
+           RdData1 : out  STD_LOGIC_VECTOR (15 downto 0);
            RdReg2 : in  STD_LOGIC_VECTOR (3 downto 0);
-           RdData2 : out  STD_LOGIC_VECTOR (23 downto 0);
+           RdData2 : out  STD_LOGIC_VECTOR (15 downto 0);
            WrReg : in  STD_LOGIC_VECTOR (3 downto 0);
-           WrData : in  STD_LOGIC_VECTOR (23 downto 0);
+           WrData : in  STD_LOGIC_VECTOR (15 downto 0);
            WrEn : in  STD_LOGIC;
            Clk : in  STD_LOGIC);
 end File_Regs;
 
 architecture Behavioral of File_Regs is
-	type tRegs is array (0 to 31) of std_logic_vector(23 downto 0);
+	type tRegs is array (0 to 31) of std_logic_vector(15 downto 0);
 	signal Regs: tRegs;
 	
 begin

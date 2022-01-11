@@ -30,22 +30,22 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity DataMem is
    port(
       Clk      : in  std_logic;
-      INW0     : in  std_logic_vector(31 downto 0);
-      INW1     : in  std_logic_vector(31 downto 0);      
-      OUTW0    : out std_logic_vector(31 downto 0);
+      INW0     : in  std_logic_vector(15 downto 0);
+      INW1     : in  std_logic_vector(15 downto 0);      
+      OUTW0    : out std_logic_vector(15 downto 0);
       
       Wr       : in  std_logic;
       Addr     : in  std_logic_vector(4 downto 0);
-      DataIn   : in  std_logic_vector(31 downto 0);        
-      DataOut  : out std_logic_vector(31 downto 0)  
+      DataIn   : in  std_logic_vector(15 downto 0);        
+      DataOut  : out std_logic_vector(15 downto 0)  
       
    );
 end DataMem;
 
 architecture Behavioral of DataMem is
-   type RAM16x32  is array (0 to 15) of std_logic_vector(31 downto 0); 
-   signal RAM     : RAM16x32;
-   signal MemData : std_logic_vector(31 downto 0);
+   type RAM16x16  is array (0 to 15) of std_logic_vector(15 downto 0); 
+   signal RAM     : RAM16x16;
+   signal MemData : std_logic_vector(15 downto 0);
 begin
    process(Clk)
    begin
