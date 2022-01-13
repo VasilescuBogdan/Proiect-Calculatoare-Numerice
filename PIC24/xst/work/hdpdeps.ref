@@ -1,50 +1,71 @@
-V3 35
-FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ALU.vhd 2021/11/11.16:41:50 J.40
-FL //vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd 2021/12/15.10:51:13 J.40
+V3 51
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ALU.vhd 2022/01/12.19:14:39 J.40
+EN work/ALU 1642007685 FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ALU.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/ALU/Behavioral 1642007686 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ALU.vhd EN work/ALU 1642007685
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ctrl.vhd 2022/01/11.17:38:54 J.40
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/DataMem.vhd 2022/01/12.19:07:06 J.40
+EN work/DataMem 1642007231 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/DataMem.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/DataMem/Behavioral 1642007232 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/DataMem.vhd \
+      EN work/DataMem 1642007231
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/File_Regs.vhd 2022/01/11.14:04:14 J.40
 FL //vboxsvr/proiect_calculatoare_numerice/PIC24/MUX2V4.vhd 2021/10/28.15:50:12 J.40
 FL //vboxsvr/proiect_calculatoare_numerice/PIC24/MUX2V5.vhd 2021/10/28.15:46:21 J.40
 FL //vboxsvr/proiect_calculatoare_numerice/PIC24/MUX2_4.vhd 2021/10/21.17:41:29 J.40
-FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ROM32x24.vhd 2021/10/21.17:29:24 J.40
-EN work/ROM32x24 1635427734 \
-      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ROM32x24.vhd \
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/PC_Update.vhd 2022/01/12.19:03:04 J.40
+EN work/PC_Update 1642007006 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/PC_Update.vhd \
       PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
       PB ieee/STD_LOGIC_UNSIGNED 1192821033
-AR work/ROM32x24/Behavioral 1635427735 \
-      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ROM32x24.vhd \
-      EN work/ROM32x24 1635427734
+AR work/PC_Update/Behavioral 1642007007 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/PC_Update.vhd \
+      EN work/PC_Update 1642007006
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ProgCnt.vhd 2022/01/12.19:03:59 J.40
+EN work/ProgCnt 1642007044 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ProgCnt.vhd \
+      PB ieee/std_logic_1164 1192821031 PB ieee/std_logic_arith 1192821032 \
+      PB ieee/STD_LOGIC_UNSIGNED 1192821033
+AR work/ProgCnt/Behavioral 1642007045 \
+      FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ProgCnt.vhd \
+      EN work/ProgCnt 1642007044
+FL //vboxsvr/proiect_calculatoare_numerice/PIC24/ROM32x24.vhd 2021/10/21.17:29:24 J.40
 FL //vboxsvr/proiect_ceva/PIC24/PC_Update.vhd 2021/10/14.17:30:52 J.40
 FL //vboxsvr/proiect_ceva/PIC24/ProgCnt.vhd 2021/10/14.16:51:48 J.40
 FL //vboxsvr/proiect_ceva/PIC24/ROM32x24.vhd 2021/10/14.17:44:06 J.40
-FL Z:/PIC24/ALU.vhd 2021/11/11.16:41:50 J.40
-EN work/ALU 1636641731 FL Z:/PIC24/ALU.vhd PB ieee/std_logic_1164 1192821031 \
+FL Z:/PIC24/ALU.vhd 2022/01/12.12:54:11 J.40
+FL Z:/PIC24/ctrl.vhd 2022/01/11.17:38:54 J.40
+EN work/ctrl 1641915562 FL Z:/PIC24/ctrl.vhd PB ieee/std_logic_1164 1192821031 \
       PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
-AR work/ALU/Behavioral 1636641732 \
-      FL Z:/PIC24/ALU.vhd EN work/ALU 1636641731
-FL Z:/PIC24/File_Regs.vhd 2021/12/15.10:51:13 J.40
-EN work/File_Regs 1639566576 FL Z:/PIC24/File_Regs.vhd PB ieee/std_logic_1164 1192821031 \
+AR work/ctrl/Behavioral 1641915563 \
+      FL Z:/PIC24/ctrl.vhd EN work/ctrl 1641915562
+FL Z:/PIC24/DataMem.vhd 2022/01/11.16:10:15 J.40
+FL Z:/PIC24/File_Regs.vhd 2022/01/11.14:04:14 J.40
+EN work/File_Regs 1641984875 FL Z:/PIC24/File_Regs.vhd PB ieee/std_logic_1164 1192821031 \
       PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
-AR work/File_Regs/Behavioral 1639566577 \
-      FL Z:/PIC24/File_Regs.vhd EN work/File_Regs 1639566576
+AR work/File_Regs/Behavioral 1641984876 \
+      FL Z:/PIC24/File_Regs.vhd EN work/File_Regs 1641984875
 FL Z:/PIC24/MUX2V4.vhd 2021/10/28.15:50:12 J.40
 EN work/MUX2V4 1635425439 FL Z:/PIC24/MUX2V4.vhd PB ieee/std_logic_1164 1192821031 \
       PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
 AR work/MUX2V4/Behavioral 1635425440 \
       FL Z:/PIC24/MUX2V4.vhd EN work/MUX2V4 1635425439
 FL Z:/PIC24/MUX2V5.vhd 2021/10/28.15:46:21 J.40
-FL Z:/PIC24/PC_Update.vhd 2021/10/14.17:30:52 J.40
-EN work/PC_Update 1634221907 FL Z:/PIC24/PC_Update.vhd PB ieee/std_logic_1164 1192821031 \
-      PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
-AR work/PC_Update/Behavioral 1634221908 \
-      FL Z:/PIC24/PC_Update.vhd EN work/PC_Update 1634221907
-FL Z:/PIC24/PIC24.vhf 2021/10/15.13:27:17 J.40
-EN work/PIC24 1634293737 FL Z:/PIC24/PIC24.vhf PB ieee/std_logic_1164 1192821031 \
+FL Z:/PIC24/PC_Update.vhd 2022/01/12.12:31:25 J.40
+FL Z:/PIC24/PIC24.vhf 2022/01/12.19:15:34 J.40
+EN work/PIC24 1642007737 FL Z:/PIC24/PIC24.vhf PB ieee/std_logic_1164 1192821031 \
       PH ieee/NUMERIC_STD 1192821033 LB UNISIM PH unisim/VCOMPONENTS 1194566982
-AR work/PIC24/BEHAVIORAL 1634293738 \
-      FL Z:/PIC24/PIC24.vhf EN work/PIC24 1634293737 CP PC_Update CP ProgCnt \
-      CP ROM32x24
+AR work/PIC24/BEHAVIORAL 1642007738 \
+      FL Z:/PIC24/PIC24.vhf EN work/PIC24 1642007737 CP ALU CP ctrl CP DataMem \
+      CP MUX2V16 CP MUX2V4 CP PC_Update CP ProgCnt CP File_Regs CP ROM32x24
 FL Z:/PIC24/ProgCnt.vhd 2021/10/14.16:51:48 J.40
-EN work/ProgCnt 1634221923 FL Z:/PIC24/ProgCnt.vhd PB ieee/std_logic_1164 1192821031 \
+FL Z:/PIC24/ROM32x24.vhd 2021/10/21.16:29:24 J.40
+EN work/ROM32x24 1641986624 FL Z:/PIC24/ROM32x24.vhd PB ieee/std_logic_1164 1192821031 \
       PB ieee/std_logic_arith 1192821032 PB ieee/STD_LOGIC_UNSIGNED 1192821033
-AR work/ProgCnt/Behavioral 1634221924 \
-      FL Z:/PIC24/ProgCnt.vhd EN work/ProgCnt 1634221923
-FL Z:/PIC24/ROM32x24.vhd 2021/10/21.17:29:24 J.40
+AR work/ROM32x24/Behavioral 1641986625 \
+      FL Z:/PIC24/ROM32x24.vhd EN work/ROM32x24 1641986624

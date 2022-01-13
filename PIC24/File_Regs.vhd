@@ -39,7 +39,7 @@ entity File_Regs is
 end File_Regs;
 
 architecture Behavioral of File_Regs is
-	type tRegs is array (0 to 31) of std_logic_vector(15 downto 0);
+	type tRegs is array (0 to 15) of std_logic_vector(15 downto 0);
 	signal Regs: tRegs;
 	
 begin

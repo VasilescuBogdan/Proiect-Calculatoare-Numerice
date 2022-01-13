@@ -50,7 +50,7 @@ begin
    process(Clk)
    begin
       if rising_edge(Clk) then
-         if (Wr='1') then
+         if (Wr='1' and Addr(4) = '0') then
             RAM(conv_integer(Addr(3 downto 0))) <= DataIn; 
          end if;   
       end if;
@@ -59,10 +59,10 @@ begin
    MemData  <= RAM(conv_integer(Addr(3 downto 0)));
    
    DataOut  <= MemData  when Addr(4)='0' else
-               INW0   when Addr(1 downto 0)=0 else
-               INW1   ;
+               INW0   when Addr(3 downto 0) = 0 else			--1020h = 00|10_000|0
+               INW1   ;			--1022h = 00|10_001|0
                
-   OUTW0    <= DataIn when rising_edge(Clk) and Addr(4)='1' and Addr(1)='1' and Wr='1';            
+   OUTW0    <= DataIn when rising_edge(Clk) and Addr(4)='1' and Addr(1)='1' and Wr='1';   --1024h = 00|10_010|0         
                
 end Behavioral;
 

@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity ProgCnt is
     Port ( Clk : in  STD_LOGIC;
            New_PC : in  STD_LOGIC_VECTOR (5 downto 0);
-           PC : out  STD_LOGIC_VECTOR (5 downto 0):= "000000"
+           PC : out  STD_LOGIC_VECTOR (5 downto 0):= b"00_0000"
 			  );
 end ProgCnt;
 

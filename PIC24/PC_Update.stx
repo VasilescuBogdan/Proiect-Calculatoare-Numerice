@@ -1,22 +1,24 @@
 Release 9.2.04i - xst J.40
 Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to ./xst/projnav.tmp
-CPU : 0.00 / 0.28 s | Elapsed : 0.00 / 0.00 s
+CPU : 0.00 / 0.66 s | Elapsed : 0.00 / 1.00 s
  
 --> 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//vboxsvr/proiect_ceva/PIC24/PC_Update.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/PC_Update is now defined in a different file.  It was defined in "Z:/PIC24/PC_Update.vhd", and is now defined in "//vboxsvr/proiect_calculatoare_numerice/PIC24/PC_Update.vhd".
+WARNING:HDLParsers:3607 - Unit work/PC_Update/Behavioral is now defined in a different file.  It was defined in "Z:/PIC24/PC_Update.vhd", and is now defined in "//vboxsvr/proiect_calculatoare_numerice/PIC24/PC_Update.vhd".
+Compiling vhdl file "//vboxsvr/proiect_calculatoare_numerice/PIC24/PC_Update.vhd" in Library work.
 Entity <pc_update> compiled.
-Entity <PC_Update> (Architecture <Behavioral>) compiled.
-CPU : 0.18 / 0.46 s | Elapsed : 0.00 / 0.00 s
+Entity <pc_update> (Architecture <behavioral>) compiled.
+CPU : 0.42 / 1.08 s | Elapsed : 0.00 / 1.00 s
  
 --> 
 
-Total memory usage is 177100 kilobytes
+Total memory usage is 178108 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
